@@ -10,14 +10,11 @@
 "scripts": {
 "start": "node index.js"
 },
-"author": "Nexty Bot",
-"license": "ISC",
 "dependencies": {
 "@hapi/boom": "^10.0.1",
 "@whiskeysockets/baileys": "^6.7.23",
 "axios": "^1.6.0",
 "jimp": "^1.6.1",
-"pino": "^8.17.2",
-"wa-sticker-formatter": "^5.0.2"
+"pino": "^8.17.2"
 }
 }
