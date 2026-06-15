@@ -1,0 +1,23 @@
+{
+  "name": "nexty-bot",
+  "version": "1.0.0",
+  "description": "Nexty WhatsApp Bot - Powered by Baileys",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nexty Bot",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.9",
+    "axios": "^1.6.0",
+    "jimp": "^0.22.10",
+    "pino": "^8.17.2",
+    "wa-sticker-formatter": "^5.0.2"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Nexty-Bot",
+  "description": "Nexty WhatsApp Bot - Powered by Baileys",
+  "repository": "https://github.com/isagii7/nexty-bot",
+  "keywords": ["whatsapp", "baileys", "bot", "nexty"],
+  "env": {
+    "SESSION": {
+      "description": "Your NEXTY~ session ID from session generator",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Your WhatsApp number (no + or spaces)",
+      "value": "923192084504",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Your name",
+      "value": "Nexty Owner",
+      "required": false
+    },
+    "PREFIX": {
+      "description": "Bot command prefix",
+      "value": ".",
+      "required": false
+    },
+    "MODE": {
+      "description": "Bot mode: public or private",
+      "value": "public",
+      "required": false
+    },
+    "AUTO_READ": {
+      "description": "Auto read messages: true or false",
+      "value": "false",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "stack": "heroku-24"
+}
